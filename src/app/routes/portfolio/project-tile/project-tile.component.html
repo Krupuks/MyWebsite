@@ -1,0 +1,22 @@
+<div
+  class="project-tile"
+  (mouseenter)="toggleHover(true)"
+  (mouseleave)="toggleHover(false)"
+>
+  <div class="image-container">
+    <img
+      [src]="imageUrl"
+      alt="{{ projectTitle }}"
+      (error)="handleImageError($event)"
+    />
+  </div>
+  <div [style.color]="textColor" class="text-container">
+    <h2 *ngIf="isHovered">{{ projectTitle }}</h2>
+
+    <div class="tags" *ngIf="isHovered">
+      <span *ngFor="let tag of tags" class="tag {{ tag.toLowerCase() }}">{{
+        tag
+      }}</span>
+    </div>
+  </div>
+</div>

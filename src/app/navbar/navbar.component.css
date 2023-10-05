@@ -1,0 +1,14 @@
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-item .nav-link,
+.navbar-custom .nav-item .navbar-text {
+  color: white;
+}
+
+.navbar-nav.d-flex {
+  flex-direction: row;
+}
+
+.active {
+    font-weight: 700;
+  }

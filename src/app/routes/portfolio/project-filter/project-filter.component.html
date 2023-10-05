@@ -1,0 +1,9 @@
+<div class="filter-bar">
+  <button
+    *ngFor="let tag of allTags"
+    (click)="toggleFilter(tag)"
+    [class.active]="selectedTags.includes(tag)"
+  >
+    {{ tag }}
+  </button>
+</div>

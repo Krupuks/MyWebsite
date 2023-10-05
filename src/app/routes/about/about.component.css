@@ -1,0 +1,43 @@
+:host {
+    --title-size: 100px;
+    --info-size: 20px;
+  }
+  
+  .title, .info {
+    left: calc(100vw/6);
+    position: relative;
+    top: calc(40vh);
+  }
+  
+  .info {
+    font-size: var(--info-size);
+  }
+  
+  .title {
+    font-size: var(--title-size);
+    margin: -40px;
+  }
+  
+  .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    width: 100vw;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .slide-volume {
+    position: absolute; /* Change to absolute */
+    top: 0%; /* Adjust as necessary */
+    left: 0%; /* Adjust as necessary */
+  }
+  

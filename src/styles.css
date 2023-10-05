@@ -1,1 +1,46 @@
+
 /* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+:root {
+  --scale: 4;
+  --theBoysX: 90px;
+  --theBoysY: 200px;
+  --posX: 75vw;
+  --posY: 40vh;
+}
+
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(assets/fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+p{display: inline;}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  font-family: HankenGrotesk;
+  overflow:auto;
+}
+
+
+button{
+  font-size:larger;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: none;
+}
+
+
+.code {background-color: rgba(80, 200, 120, 0.5);}
+.art {background-color: rgba(80, 188, 200, 0.5);}
+.design {background-color: rgba(225, 225, 165, 0.5);}

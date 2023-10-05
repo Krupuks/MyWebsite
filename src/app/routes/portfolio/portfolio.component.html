@@ -1,0 +1,7 @@
+<div class="portfolio">
+  <app-project-filter
+    [allTags]="allTags"
+    (filterChange)="applyFilter($event)"
+  ></app-project-filter>
+  <app-project-container [projects]="filteredProjects"></app-project-container>
+</div>

@@ -1,0 +1,13 @@
+.kev {
+    position: absolute;
+    background-image: url('/assets/images/kev.png');
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: cover;
+    left: calc(var(--posX) - var(--scale) * var(--theBoysX)/2);
+    top: calc(var(--posY) - var(--scale) * var(--theBoysY)/2);
+    width: calc(var(--scale) * var(--theBoysX));
+    height: calc(var(--scale) * var(--theBoysY));
+  }

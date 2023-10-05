@@ -1,0 +1,90 @@
+[
+  {
+    "imageUrl": "assets/images/projects/SkyDiff/icon.png",
+    "projectTitle": "SkyDiff",
+    "projectDescription": "A League of Legends division visualisation app",
+    "textColor": "black",
+    "tags": [
+      "art",
+      "code"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Drift/icon.png",
+    "projectTitle": "Drift",
+    "projectDescription": "Art & Designs",
+    "textColor": "white",
+    "tags": [
+      "art",
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/ParkFlow/icon.png",
+    "projectTitle": "ParkFlow",
+    "projectDescription": "App",
+    "textColor": "white",
+    "tags": [
+      "code",
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/FoodFlow/icon.png",
+    "projectTitle": "FoodFlow",
+    "projectDescription": "UI/UX Design",
+    "textColor": "beige",
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Nova/icon.png",
+    "projectTitle": "Nova",
+    "projectDescription": "Game Developement project",
+    "textColor": "white",
+    "tags": [
+      "art",
+      "code"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/FloraPod/icon.png",
+    "projectTitle": "FloraPod",
+    "projectDescription": "Logo",
+    "textColor": "black",
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Paddo/icon.png",
+    "projectTitle": "Paddo",
+    "projectDescription": "Personal Game project",
+    "textColor": "white",
+    "tags": [
+      "art",
+      "code"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Pauline/icon.png",
+    "projectTitle": "Pauline",
+    "projectDescription": "Web design",
+    "textColor": "white",
+    "tags": [
+      "code",
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Calamartes/icon.png",
+    "projectTitle": "Calamartes",
+    "projectDescription": "Poster design",
+    "textColor": "white",
+    "tags": [
+      "art",
+      "design"
+    ]
+  }
+]
