@@ -11,3 +11,9 @@
     width: calc(var(--scale) * var(--theBoysX));
     height: calc(var(--scale) * var(--theBoysY));
   }
+  
+  @media (max-width: 1000px) { /* Adjust the minimum width as per your needs */
+    .kev {
+      left: calc(550px  + 20vw - var(--scale) * var(--theBoysX)/2); /* Set the desired value directly */
+    }
+  }

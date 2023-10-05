@@ -41,6 +41,6 @@ button{
 }
 
 
-.code {background-color: rgba(80, 200, 120, 0.5);}
-.art {background-color: rgba(80, 188, 200, 0.5);}
-.design {background-color: rgba(225, 225, 165, 0.5);}
+.code   {background-color: rgba(080, 200, 120, 0.7);}
+.art    {background-color: rgba(080, 188, 200, 0.7);}
+.design {background-color: rgba(181, 100, 235, 0.7);}
