@@ -47,6 +47,7 @@
 
 .slide-container {
   flex: 0 0 100vh;
+  width: 100vw;
   position: relative;
   scroll-snap-align: start;
 }
@@ -64,17 +65,14 @@
 
 #second-slide{
   flex: 0 0 fit-content;
-  width: 100vw;
   background-color: rgba(0, 0, 0, 1);
 }
 
 #third-slide{
   flex: 0 0 50vh;
-  width: 100vw;
   background-color: rgba(10, 10, 10, 1);
 }
 
 #last-slide{
   flex: 0 0 fit-content;
-  width: 100vw;
 }

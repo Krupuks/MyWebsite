@@ -1,7 +1,16 @@
-<div class="portfolio">
-  <app-project-filter
-    [allTags]="allTags"
-    (filterChange)="applyFilter($event)"
-  ></app-project-filter>
-  <app-project-container [projects]="filteredProjects"></app-project-container>
+<div class="slideshow-container">
+  <div class="slide-container" id="first-slide">
+    <app-project-filter
+      [allTags]="allTags"
+      (filterChange)="applyFilter($event)"
+    ></app-project-filter>
+    <app-project-container
+      [projects]="filteredProjects"
+    ></app-project-container>
+  </div>
+  <div class="slide-container" id="last-slide">
+    <div class="slide-volume">
+      <app-contact></app-contact>
+    </div>
+  </div>
 </div>
