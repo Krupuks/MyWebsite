@@ -1,22 +1,58 @@
-<nav class="navbar fixed-top navbar-custom">
+<nav class="navbar fixed-top navbar-custom navbar-expand-lg">
   <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img
+        src="assets/images/kevin-logo.svg"
+        width="30"
+        height="30"
+        alt="logo"
+      />
+    </a>
     <a class="navbar-brand" href="#">Kevin Van Rooy</a>
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-      <li class="nav-item mx-5" [ngClass]="{ active: activeLink === '/home' }">
-        <a class="nav-link" routerLink="/home">Home</a>
-      </li>
-      <li
-        class="nav-item mx-5"
-        [ngClass]="{ active: activeLink === '/portfolio' }"
-      >
-        <a class="nav-link" routerLink="/portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item mx-5" [ngClass]="{ active: activeLink === '/about' }">
-        <a class="nav-link" routerLink="/about">About</a>
-      </li>
-      <li class="nav-item mx-5">
-        <a class="nav-link" onclick="scrollToBottom()">Contact</a>
-      </li>
-    </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      [ngClass]="{ active: isDropdownActive }"
+      (click)="toggleDropdown()"
+    >
+      <img
+        src="assets/images/menu-on.svg"
+        width="30"
+        height="30"
+        alt="logo"
+        [style.opacity]="initialOpacity"
+      />
+    </button>
+
+    <div class="collapse navbar-collapse text-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li
+          class="nav-item mx-3"
+          [ngClass]="{ active: activeLink === '/home' }"
+        >
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li
+          class="nav-item mx-3"
+          [ngClass]="{ active: activeLink === '/portfolio' }"
+        >
+          <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+        </li>
+        <li
+          class="nav-item mx-3"
+          [ngClass]="{ active: activeLink === '/about' }"
+        >
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" onclick="scrollToBottom()">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

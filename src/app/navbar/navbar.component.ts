@@ -22,4 +22,13 @@ export class NavbarComponent {
       behavior: 'smooth'
     });
   }
+
+
+  isDropdownActive = false;
+  initialOpacity = 0.5;
+
+  toggleDropdown() {
+    this.isDropdownActive = !this.isDropdownActive;
+    this.initialOpacity = this.isDropdownActive ? 1 : 0.5;
+  }
 }
