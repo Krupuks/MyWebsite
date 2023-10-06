@@ -3,16 +3,17 @@
 .navbar-custom .navbar-nav .nav-item .nav-link,
 .navbar-custom .nav-item .navbar-text {
   color: white;
+  outline: none;
+  box-shadow: none;
 }
 
-.navbar-nav.d-flex {
-  flex-direction: row;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .active {
     font-weight: 700;
-  }
-
-  .justify-to-right {
-    justify-content: flex-end; /* Align items to the right */
   }
