@@ -20,7 +20,3 @@
   min-height: 70vh;
   padding: 10vh 5vw 10vh 5vw;
 }
-
-#last-slide{
-  flex: 0 0 fit-content;
-}

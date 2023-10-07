@@ -1,5 +1,5 @@
 .container {
-  padding: 50px calc(100vw/6) 100px;
+  padding: 100px calc(100vw/6);
   min-width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,6 @@
 .container-column {
   flex: 1;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .title {
