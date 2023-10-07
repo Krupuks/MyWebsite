@@ -7,15 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { HomeComponent } from './routes/home/home.component';
-import { AboutComponent } from './routes/about/about.component';
-import { PortfolioComponent } from './routes/portfolio/portfolio.component';
-import { ContactComponent } from './routes/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SpaceComponent } from './backgrounds/space/space.component';
 import { KevComponent } from './backgrounds/kev/kev.component';
-import { ProjectTileComponent } from './routes/portfolio/project-tile/project-tile.component';
-import { ProjectContainerComponent } from './routes/portfolio/project-container/project-container.component';
-import { ProjectFilterComponent } from './routes/portfolio/project-filter/project-filter.component';
+import { ProjectTileComponent } from './pages/portfolio/project-tile/project-tile.component';
+import { ProjectContainerComponent } from './pages/portfolio/project-container/project-container.component';
+import { ProjectFilterComponent } from './pages/portfolio/project-filter/project-filter.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -25,12 +25,12 @@ import { ProjectFilterComponent } from './routes/portfolio/project-filter/projec
     HomeComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent,
     SpaceComponent,
     KevComponent,
     ProjectTileComponent,
     ProjectContainerComponent,
-    ProjectFilterComponent
+    ProjectFilterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
