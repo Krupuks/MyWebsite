@@ -13,3 +13,13 @@
   flex: 0 0 fit-content;
   background-color: rgba(10, 10, 10, 1);
 }
+
+
+@media (max-width: 1000px) { /* Adjust the minimum width as per your needs */
+  .title.centralized{
+    font-size: 10vw ;
+    font-weight: var(--title-weight);
+    margin-top: calc(10vw / -2);
+
+  }
+}

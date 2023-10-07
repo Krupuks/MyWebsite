@@ -51,9 +51,11 @@ button{
 }
 
 .centralized{
-  left: calc(100vw/6);
   position: relative;
-  top: calc(40vh);
+  left: calc(100vw/6);
+  top: calc(35vh);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .styled{

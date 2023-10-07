@@ -12,8 +12,14 @@
     height: calc(var(--scale) * var(--theBoysY));
   }
   
-  @media (max-width: 1000px) { /* Adjust the minimum width as per your needs */
+  @media (max-width: 850px) { /* Adjust the minimum width as per your needs */
     .kev {
-      left: calc(550px  + 20vw - var(--scale) * var(--theBoysX)/2); /* Set the desired value directly */
+      left: calc(298px  + 40vw - var(--scale) * var(--theBoysX)/2); /* Set the desired value directly */
+    }
+  }
+
+  @media (max-width: 720px) { /* Adjust the minimum width as per your needs */
+    .kev {
+      left: calc(0px - 134px  + 100vw - var(--scale) * var(--theBoysX)/2); /* Set the desired value directly */
     }
   }
