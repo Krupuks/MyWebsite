@@ -75,10 +75,10 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/PaulineWeb",
+    "imageUrl": "assets/images/projects/Pauline",
     "projectTitle": "Pauline",
     "projectDescription": "Web design",
-    "textColor": "white",
+    "textColor": "black",
     "pixelated": false,
     "tags": [
       "code",
