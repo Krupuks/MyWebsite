@@ -10,18 +10,26 @@ export class ProjectTileComponent {
   @Input() projectTitle: string | undefined;
   @Input() projectDescription: string | undefined;
   @Input() textColor: string | undefined;
-  @Input() tags: string[] = []; // Add this line for tags input property
+  @Input() pixelated: boolean | undefined;
+  @Input() tags: string[] = [];
 
   isHovered = false;
 
   toggleHover(isHovered: boolean) {
     this.isHovered = isHovered;
   }
-  
+
   handleImageError(event: Event) {
-    // This function will be called if the image fails to load
-    // You can implement any behavior you want here, for example, hide the container
     const imgElement = event.target as HTMLImageElement;
-    imgElement.parentElement?.classList.add('hidden'); // Add a 'hidden' class to hide the container
+    imgElement.parentElement?.classList.add('hidden');
+  }
+
+  getImageStyle() {
+    if (this.pixelated) {
+      return { 'image-rendering': 'pixelated' };
+    } else {
+      return {};
+    }
   }
 }
+

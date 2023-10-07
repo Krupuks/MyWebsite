@@ -4,6 +4,7 @@
     "projectTitle": "SkyDiff",
     "projectDescription": "A League of Legends division visualisation app",
     "textColor": "black",
+    "pixelated": true,
     "tags": [
       "art",
       "code"
@@ -14,6 +15,7 @@
     "projectTitle": "Drift",
     "projectDescription": "Art & Designs",
     "textColor": "white",
+    "pixelated": false,
     "tags": [
       "art",
       "design"
@@ -24,6 +26,7 @@
     "projectTitle": "ParkFlow",
     "projectDescription": "App",
     "textColor": "white",
+    "pixelated": false,
     "tags": [
       "code",
       "design"
@@ -34,6 +37,7 @@
     "projectTitle": "FoodFlow",
     "projectDescription": "UI/UX Design",
     "textColor": "beige",
+    "pixelated": false,
     "tags": [
       "design"
     ]
@@ -43,6 +47,7 @@
     "projectTitle": "Nova",
     "projectDescription": "Game Developement project",
     "textColor": "white",
+    "pixelated": true,
     "tags": [
       "art",
       "code"
@@ -53,6 +58,7 @@
     "projectTitle": "FloraPod",
     "projectDescription": "Logo",
     "textColor": "black",
+    "pixelated": false,
     "tags": [
       "design"
     ]
@@ -62,6 +68,7 @@
     "projectTitle": "Paddo",
     "projectDescription": "Personal Game project",
     "textColor": "black",
+    "pixelated": true,
     "tags": [
       "art",
       "code"
@@ -72,6 +79,7 @@
     "projectTitle": "Pauline",
     "projectDescription": "Web design",
     "textColor": "white",
+    "pixelated": false,
     "tags": [
       "code",
       "design"
@@ -82,6 +90,7 @@
     "projectTitle": "Calamartes",
     "projectDescription": "Poster design",
     "textColor": "white",
+    "pixelated": false,
     "tags": [
       "art",
       "design"
