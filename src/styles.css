@@ -9,14 +9,14 @@
   --posY: 40vh;
 
 
-  --title-size: 100px;
+  --title-size: calc(1vw + 80px);
   --title-weight: 700; 
 
   --subtitle-size: 50px;
   --subtitle-weight: 700;
   
-  --paragraph-size: 25px;
-  --paragraph-weight: 700;
+  --paragraph-size: calc(0.2vw + 16px);
+  --paragraph-weight: 200;
 }
 
 
@@ -52,10 +52,8 @@ button{
 
 .centralized{
   position: relative;
-  left: calc(100vw/6);
-  top: calc(35vh);
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  top: calc(15vh);
+  padding: 20vh calc(100vw/6);
 }
 
 .styled{
@@ -66,7 +64,7 @@ button{
 .title {
   font-size: var(--title-size);
   font-weight: var(--title-weight);
-  margin-top: calc(var(--title-size) / -2);
+  line-height: calc(var(--title-size));
 }
 .subtitle {
   font-size: var(--subtitle-size);
