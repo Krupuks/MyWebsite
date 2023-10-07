@@ -9,8 +9,9 @@
   right: -10vw;
   bottom: -20vh;
   width: 60vw;
-  height: 100vh;
+  height: 80vh;
   opacity: 0.9;
+  filter: grayscale(0.2);
 }
 
 .title.about{
@@ -27,4 +28,38 @@
 #first-slide{
   flex: 0 0 fit-content;
   min-height: 80vh;
+}
+
+#second-slide{
+  flex: 0 0 10vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+#third-slide{
+  flex: 0 0 fit-content;
+  min-height: 40vh;
+  background-color: rgb(39, 39, 39);
+}
+
+.icon-row{
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: space-around;
+  animation: scrollRow 90s linear infinite;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+
+@keyframes scrollRow {
+  from {transform: translateX(0%);}
+  to {transform: translateX(-100%);}
 }

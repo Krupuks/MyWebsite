@@ -52,7 +52,7 @@ button{
 
 .centralized{
   position: relative;
-  top: calc(15vh);
+  top: calc(10vh);
   padding: 20vh calc(100vw/6);
 }
 
