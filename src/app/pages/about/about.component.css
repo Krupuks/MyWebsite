@@ -4,11 +4,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   right: 0vw;
-  bottom: 0vh;
+  bottom: -20vh;
   width: 50vw;
   height: 100vh;
-  filter:brightness(0.8)  contrast(1) saturate(0.8) grayscale(0);
-  background-position: center center;
+  filter:brightness(1)  contrast(1) saturate(0.8) grayscale(0);
+}
+
+.page{
+  position: relative;
+  top: calc(10vh);
+  margin: 5vh calc(100vw/12) 0vh;
+  padding: 15vh calc(100vw/12) 200px;
+  background-color: rgb(194, 183, 166);
+  border-radius: 25px 25px 0px 0px;
 }
 
 .title.about{
@@ -17,15 +25,14 @@
 }
 
 .paragraph.about{
-  width: 40vw;
+  width: 38vw;
   min-width: 250px;
 }
 
 
 #first-slide{
   flex: 0 0 fit-content;
-  min-height: 80vh;
-  background-color: rgb(0, 0, 0);
+  min-height: 50vh;
 }
 
 #second-slide{
@@ -60,4 +67,29 @@
 @keyframes scrollRow {
   from {transform: translateX(0%);}
   to {transform: translateX(-100%);}
+}
+
+.diplomas {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+}
+
+.diploma {
+  display: flex;
+  max-width: 250px;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.diploma .paragraph {
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .kevpic,.diplomas,.paragraph.about {
+    width: auto;
+  }
 }

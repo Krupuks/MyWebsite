@@ -16,7 +16,7 @@
   --subtitle-weight: 700;
   
   --paragraph-size: calc(0.2vw + 16px);
-  --paragraph-weight: 200;
+  --paragraph-weight: 300;
 }
 
 
@@ -50,6 +50,10 @@ body, html, .navbar-custom .navbar-brand,
   color: white;
 }
 
+.onwhite{
+  color: black;
+}
+
 button{
   font-size:larger;
   font-weight: 500;
@@ -68,6 +72,10 @@ button{
 .styled{
   position: relative;
   padding: 20vh calc(100vw/6);
+}
+
+.active {
+  font-weight: 700;
 }
 
 .title {
