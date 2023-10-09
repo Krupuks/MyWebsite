@@ -12,15 +12,14 @@
 
 .page{
   position: relative;
-  top: calc(10vh);
-  margin: 5vh calc(100vw/12) 0vh;
-  padding: 15vh calc(100vw/12) 200px;
+  margin: 10vh calc(100vw/12) 0vh;
+  padding: 10vh calc(100vw/12) 100px;
   background-color: rgb(194, 183, 166);
   border-radius: 25px 25px 0px 0px;
 }
 
 .title.about{
-  width: 40vw;
+  width: 70vw;
   min-width: 250px;
 }
 
@@ -44,7 +43,6 @@
 
 #third-slide{
   flex: 0 0 fit-content;
-  min-height: 40vh;
   background-color: rgb(39, 39, 39);
 }
 
@@ -88,8 +86,53 @@
   font-size: 15px;
 }
 
+#extra-info{
+  width: 90vw;
+  font-style: italic;
+}
+
+@media screen and (max-width: 880px) {
+  .title.about{
+    font-size: 50px;
+  }
+}
+
 @media screen and (max-width: 500px) {
-  .kevpic,.diplomas,.paragraph.about {
+  .kevpic,.diplomas,.paragraph.about, #extra-info {
     width: auto;
   }
+  .title.about{
+    font-size: 35px;
+  }
+  .subtitle.about{
+    font-size: 20px;
+  }
+}
+
+
+
+
+.container {
+  padding: 50px calc(100vw/6);
+  min-height: 20vh;
+  min-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-column {
+  flex: 1;
+  padding: 30px 30px;
+}
+
+.container .title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.text {
+  font-size: 12px;
+  margin: 5px 0;
+  display: block;
 }
