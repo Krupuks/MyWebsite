@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,18 +10,23 @@ export class NavbarComponent {
 
   activeLink: string = "";
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef ) {
     this.router.events.subscribe(() => {
       this.activeLink = this.router.url;
     });
   }
-  
   scrollToBottom() {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth'
-    });
+    const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
+  
+    if (slideshowContainer) {
+      const lastSlideContainer = slideshowContainer.querySelector('.slide-container:last-child') as HTMLElement;
+  
+      if (lastSlideContainer) {
+        lastSlideContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    }
   }
+
 
 
   isDropdownActive = false;

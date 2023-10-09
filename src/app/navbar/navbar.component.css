@@ -1,16 +1,6 @@
 /* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-item .nav-link,
-.navbar-custom .nav-item .navbar-text {
-  color: white;
-}
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-}
+
 
 .active {
     font-weight: 700;

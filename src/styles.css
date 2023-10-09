@@ -2,17 +2,17 @@
 /* You can add global styles to this file, and also import other style files */
 @charset "UTF-8";
 :root {
-  --scale: 4;
+  --scale: 3;
   --theBoysX: 90px;
   --theBoysY: 200px;
-  --posX: 75vw;
+  --posX: 50vw;
   --posY: 40vh;
 
 
   --title-size: calc(1vw + 80px);
   --title-weight: 700; 
 
-  --subtitle-size: 50px;
+  --subtitle-size: calc(1vw + 30px);
   --subtitle-weight: 700;
   
   --paragraph-size: calc(0.2vw + 16px);
@@ -26,19 +26,28 @@
   font-family: HankenGrotesk;
   src: url(assets/fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins/Poppins-Thin.ttf);
+}
 
 p{display: inline;}
 
 body, html {
   margin: 0;
   padding: 0;
-  color: white;
   height: 100%;
   width: 100%;
   margin: 0 !important;
   font-family: HankenGrotesk;
   overflow:auto;
   box-sizing: border-box;
+}
+
+body, html, .navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-item .nav-link,
+.navbar-custom .nav-item .navbar-text {
+  color: white;
 }
 
 button{
@@ -80,7 +89,7 @@ button{
 .slideshow-container {
   display: flex;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
+  /*scroll-snap-type: y mandatory;*/
   height: 100vh;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;

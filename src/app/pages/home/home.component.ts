@@ -13,15 +13,25 @@ export class HomeComponent implements OnInit {
   wordList: string[] = ['create', 'craft', 'design', 'develop', 'explore'];
   colorList: string[] = [ '#33FF57', '#5733FF', '#FFD633', '#FF338A', '#333FFA']; // List of colors
   currentIndex: number = 0;
-
-  constructor() { }
-
-  ngOnInit() {
-    // Call changeWord() every second
-    setInterval(() => {
-      this.changeWord();
-    }, 1000);
+  
+  scrollToBottom() {
+    const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
+  
+    if (slideshowContainer) {
+      const lastSlideContainer = slideshowContainer.querySelector('.slide-container:last-child') as HTMLElement;
+  
+      if (lastSlideContainer) {
+        lastSlideContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    }
   }
+  
+ngOnInit() {
+  setInterval(() => {
+    this.changeWord();
+  }, 1000);
+}
+
 
   changeWord() {
     if (this.currentIndex >= this.wordList.length) {

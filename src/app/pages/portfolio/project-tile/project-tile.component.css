@@ -2,7 +2,6 @@
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
     color: black;
-    border-radius: 10px;
     width: 300px;
     height: 300px;
     margin: 10px;
@@ -49,6 +48,5 @@ h2, p{
     display: inline-block;
     margin-right: 5px;
     padding: 1px 10px;
-    border-radius: 15px;
     color: black;
 }

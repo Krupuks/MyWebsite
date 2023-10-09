@@ -2,16 +2,13 @@
   position: absolute;
   background-image: url('/assets/images/me.png');
   background-repeat: no-repeat;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
   background-size: cover;
-  right: -10vw;
-  bottom: -20vh;
-  width: 60vw;
-  height: 80vh;
-  opacity: 0.9;
-  filter: grayscale(0.2);
+  right: 0vw;
+  bottom: 0vh;
+  width: 50vw;
+  height: 100vh;
+  filter:brightness(0.8)  contrast(1) saturate(0.8) grayscale(0);
+  background-position: center center;
 }
 
 .title.about{
@@ -28,6 +25,7 @@
 #first-slide{
   flex: 0 0 fit-content;
   min-height: 80vh;
+  background-color: rgb(0, 0, 0);
 }
 
 #second-slide{
