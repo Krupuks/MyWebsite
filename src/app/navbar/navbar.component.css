@@ -1,0 +1,12 @@
+.navbar-custom {
+    background-color: transparent; /* Set the initial background color to be transparent */
+    transition: background-color 1s; /* Add a transition for smooth animation */
+  }
+  
+  .navbar-custom.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color when scrolled */
+  }
+  
+.shadow-none{
+    border: none;
+}
