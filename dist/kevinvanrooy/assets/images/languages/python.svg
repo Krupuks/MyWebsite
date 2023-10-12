@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 695.6" style="enable-background:new 0 0 700 695.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000169537662759139116330000001301640906366181297_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-81.2893" y1="971.5956" x2="-81.2193" y2="971.5256" gradientTransform="matrix(4734.5 0 0 -4745.25 384934.5 4610531.5)">
+	<stop  offset="0" style="stop-color:#387EB8"/>
+	<stop  offset="1" style="stop-color:#366994"/>
+</linearGradient>
+<path class="st0" d="M347.1,0.3C169.6,0.3,180.9,77,180.9,77v79.7h168.8v25h-236c0,0-113.6-14-113.6,166.1s100.3,172.8,100.3,172.8
+	h57.9v-84c0,0-3.2-100.3,97.5-100.3h169.1c0,0,94.3,1.5,94.3-91.3V92.8c0,0,14.3-92.8-171-92.8l0,0L347.1,0.3z M253.8,53.7
+	c16.8-0.4,30.7,12.8,31.1,29.6c0.4,16.8-12.8,30.7-29.6,31.1s-30.7-12.8-31.1-29.6c0,0,0,0,0,0v-0.5c0-16.8,13.6-30.4,30.4-30.4l0,0
+	L253.8,53.7z"/>
+<linearGradient id="SVGID_00000088839466863137706010000018093465413813149599_" gradientUnits="userSpaceOnUse" x1="-81.5965" y1="971.8884" x2="-81.5165" y2="971.8184" gradientTransform="matrix(4734.5 0 0 -4745.25 386584.5 4612137.5)">
+	<stop  offset="0" style="stop-color:#FFE052"/>
+	<stop  offset="1" style="stop-color:#FFC331"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000088839466863137706010000018093465413813149599_);" d="M352.1,695.5c177.5,0,166.3-77,166.3-77
+	V539H349.6v-25h236.8c0,0,113.6,12.7,113.6-166.4S599.7,174.9,599.7,174.9H541v82.9c0,0,3.2,100.3-97.5,100.3H274.4
+	c0,0-94.4-1.4-94.4,91.4v153.3c0,0-14.3,92.8,171,92.8L352.1,695.5L352.1,695.5z M445.4,641.9c-16.8,0.4-30.7-12.8-31.1-29.6
+	c-0.4-16.8,12.8-30.7,29.6-31.1c16.8-0.4,30.7,12.8,31.1,29.6c0,0,0,0,0,0v0.8c0,16.8-13.6,30.4-30.3,30.4c0,0,0,0,0,0H445.4
+	L445.4,641.9z"/>
+</svg>
