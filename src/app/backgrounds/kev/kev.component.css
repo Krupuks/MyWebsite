@@ -20,10 +20,15 @@
   }
 }
 
+.subtitle {
+  font-weight: 200;
+}
+
 .text {
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease;
+  font-family: Visitor;
 }
 
 .text1 {
@@ -56,7 +61,7 @@
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 20px;
 }
   
 .text1 {

@@ -32,25 +32,25 @@
     <div class="collapse navbar-collapse text-end" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
         <li
-          class="nav-item mx-3"
+          class="nav-item"
           [ngClass]="{ active: activeLink === '/home' }"
         >
-          <a class="nav-link " routerLink="/home">Home</a>
+          <a class="nav-link " (click)="clearDropdown()" routerLink="/home">Home</a>
         </li>
         <li
-          class="nav-item mx-3"
+          class="nav-item"
           [ngClass]="{ active: activeLink === '/portfolio' }"
         >
-          <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+          <a class="nav-link" (click)="clearDropdown()" routerLink="/portfolio">Portfolio</a>
         </li>
         <li
-          class="nav-item mx-3"
+          class="nav-item"
           [ngClass]="{ active: activeLink === '/about' }"
         >
-          <a class="nav-link" routerLink="/about">About</a>
+          <a class="nav-link" (click)="clearDropdown()" routerLink="/about">About</a>
         </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" (click)="scrollToBottom()">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToBottom();clearDropdown()">Contact</a>
         </li>
       </ul>
     </div>

@@ -10,3 +10,13 @@
 .shadow-none{
     border: none;
 }
+
+
+.nav-item {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+  cursor: pointer;
+}

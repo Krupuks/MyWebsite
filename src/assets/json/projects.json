@@ -22,28 +22,6 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/Nova",
-    "projectTitle": "Nova",
-    "projectDescription": "Game Developement project",
-    "textColor": "white",
-    "pixelated": true,
-    "tags": [
-      "art",
-      "code"
-    ]
-  },
-  {
-    "imageUrl": "assets/images/projects/Drift",
-    "projectTitle": "Drift",
-    "projectDescription": "Art & Designs",
-    "textColor": "white",
-    "pixelated": false,
-    "tags": [
-      "art",
-      "design"
-    ]
-  },
-  {
     "imageUrl": "assets/images/projects/ParkFlow",
     "projectTitle": "ParkFlow",
     "projectDescription": "App",
@@ -75,9 +53,31 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/Calamartes",
-    "projectTitle": "Calamartes",
-    "projectDescription": "Poster design",
+    "imageUrl": "assets/images/projects/Pauline",
+    "projectTitle": "Pauline",
+    "projectDescription": "Web design",
+    "textColor": "black",
+    "pixelated": false,
+    "tags": [
+      "code",
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Nova",
+    "projectTitle": "Nova",
+    "projectDescription": "Game Developement project",
+    "textColor": "white",
+    "pixelated": true,
+    "tags": [
+      "art",
+      "code"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Drift",
+    "projectTitle": "Drift",
+    "projectDescription": "Art & Designs",
     "textColor": "white",
     "pixelated": false,
     "tags": [
@@ -86,13 +86,13 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/Pauline",
-    "projectTitle": "Pauline",
-    "projectDescription": "Web design",
-    "textColor": "black",
+    "imageUrl": "assets/images/projects/Calamartes",
+    "projectTitle": "Calamartes",
+    "projectDescription": "Poster design",
+    "textColor": "white",
     "pixelated": false,
     "tags": [
-      "code",
+      "art",
       "design"
     ]
   },

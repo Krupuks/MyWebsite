@@ -30,6 +30,12 @@
   src: url(assets/fonts/Poppins/Poppins-Thin.ttf);
 }
 
+@font-face {
+  font-family: Visitor;
+  src: url(assets/fonts/Visitor/visitor1.ttf);
+}
+
+
 p{display: inline;}
 
 body, html {

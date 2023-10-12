@@ -26,6 +26,7 @@
 .paragraph.about{
   width: 38vw;
   min-width: 250px;
+  text-align: justify;
 }
 
 
@@ -69,7 +70,7 @@
 
 .diplomas {
   display: flex;
-  width: 40vw;
+  width: 38vw;
   justify-content: space-around;
 }
 
