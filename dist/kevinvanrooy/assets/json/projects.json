@@ -172,14 +172,5 @@
       "architecture",
       "design"
     ]
-  },
-  {
-    "imageUrl": "assets/images/projects",
-    "projectTitle": "TEST",
-    "projectDescription": "",
-    "textColor": "white",
-    "pixelated": false,
-    "tags": [
-    ]
   }
 ]
