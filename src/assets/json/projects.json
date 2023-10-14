@@ -97,6 +97,28 @@
     ]
   },
   {
+    "imageUrl": "assets/images/projects/Thesis",
+    "projectTitle": "Thesis",
+    "projectDescription": "Architectural Design",
+    "textColor": "white",
+    "pixelated": false,
+    "tags": [
+      "architecture",
+      "design"
+    ]
+  },
+  {
+    "imageUrl": "assets/images/projects/Cohousing",
+    "projectTitle": "Cohousing",
+    "projectDescription": "Architectural Design",
+    "textColor": "white",
+    "pixelated": false,
+    "tags": [
+      "architecture",
+      "design"
+    ]
+  },
+  {
     "imageUrl": "assets/images/projects/Bibliotheek",
     "projectTitle": "Bibliotheek",
     "projectDescription": "Architectural Design",
@@ -122,7 +144,7 @@
     "imageUrl": "assets/images/projects/Infini",
     "projectTitle": "Infini",
     "projectDescription": "Architectural Design",
-    "textColor": "black",
+    "textColor": "white",
     "pixelated": false,
     "tags": [
       "architecture",
@@ -130,8 +152,8 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/Cohousing",
-    "projectTitle": "Cohousing",
+    "imageUrl": "assets/images/projects/Loods",
+    "projectTitle": "Loods",
     "projectDescription": "Architectural Design",
     "textColor": "white",
     "pixelated": false,
@@ -141,10 +163,10 @@
     ]
   },
   {
-    "imageUrl": "assets/images/projects/Pavilion",
-    "projectTitle": "Pavilioen",
+    "imageUrl": "assets/images/projects/Paviljoen",
+    "projectTitle": "Paviljoen",
     "projectDescription": "Architectural Design",
-    "textColor": "black",
+    "textColor": "white",
     "pixelated": false,
     "tags": [
       "architecture",
