@@ -108,6 +108,17 @@
     ]
   },
   {
+    "imageUrl": "assets/images/projects/Dansschool",
+    "projectTitle": "Dansschool",
+    "projectDescription": "Architectural Design",
+    "textColor": "white",
+    "pixelated": false,
+    "tags": [
+      "architecture",
+      "design"
+    ]
+  },
+  {
     "imageUrl": "assets/images/projects/Cohousing",
     "projectTitle": "Cohousing",
     "projectDescription": "Architectural Design",
