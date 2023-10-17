@@ -7,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  changableText: string = ''; // Initialize changableText as an empty string
   changableColor: string = ''; // Initialize changableColor as an empty string
 
   wordList: string[] = ['create', 'craft', 'design', 'develop', 'explore'];
   colorList: string[] = [ '#33FF57', '#5733FF', '#FFD633', '#FF338A', '#333FFA']; // List of colors
-  currentIndex: number = 0;
+  wordIndex: number = 0;
+  charIndex = 0;
+  typedText = "";
+  pipe = "|";
+  currentWord = "";
   
   scrollToBottom() {
     const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
@@ -27,20 +30,51 @@ export class HomeComponent implements OnInit {
   }
   
 ngOnInit() {
-  setInterval(() => {
-    this.changeWord();
-  }, 1000);
+  this.typeWord()
+  this.timertjeTikje();
 }
 
 
-  changeWord() {
-    if (this.currentIndex >= this.wordList.length) {
-      this.currentIndex = 0; // Reset to the beginning of the list if we reach the end
+  typeWord(){
+    this.changableColor = this.colorList[this.wordIndex];
+    if (this.wordIndex < this.wordList.length) {
+      this.currentWord = this.wordList[this.wordIndex];
+      if (this.charIndex < this.currentWord.length) {
+        this.typedText += this.currentWord.charAt(this.charIndex);
+        this.charIndex++;
+        setTimeout(()=> this.typeWord(), 180)
+      }
+      else {
+        setTimeout(()=> this.deleteWord(), 500)
+      }
     }
-
-    this.changableText = this.wordList[this.currentIndex];
-    this.changableColor = this.colorList[this.currentIndex]; // Set color based on currentIndex
-    this.currentIndex++; // Move to the next word
+    else{
+      this.wordIndex = 0;
+      this.typeWord();
+    }
   }
 
+  deleteWord(){
+    if (this.charIndex > 0) {
+      this.typedText = this.currentWord.slice(0, this.charIndex - 1);
+      this.charIndex--;
+      setTimeout(()=> this.deleteWord(), 120)
+    }
+    else {
+      this.wordIndex++;
+      this.charIndex = 0;
+      setTimeout(()=> this.typeWord(), 100)
+    }
+  }
+
+  timertjeTikje() {
+    setTimeout(() => {
+      this.pipe = "|";
+      setTimeout(() => {
+        this.pipe = "\u00A0";
+        this.timertjeTikje();
+      }, 500);
+    }, 500);
+  }
 }
+

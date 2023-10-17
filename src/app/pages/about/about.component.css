@@ -10,11 +10,16 @@
   filter:brightness(1)  contrast(1) saturate(0.8) grayscale(0);
 }
 
+#first-slide{
+  flex: 0 0 fit-content;
+  min-height: 50vh;
+}
+
 .page{
   position: relative;
   margin: 10vh calc(100vw/12) 0vh;
   padding: 10vh calc(100vw/12) 100px;
-  background-color: rgb(194, 183, 166);
+  background-image: linear-gradient(rgb(194, 183, 166), rgb(162, 152, 133));
   border-radius: 25px 25px 0px 0px;
 }
 
@@ -27,12 +32,6 @@
   width: 38vw;
   min-width: 250px;
   text-align: justify;
-}
-
-
-#first-slide{
-  flex: 0 0 fit-content;
-  min-height: 50vh;
 }
 
 #second-slide{
@@ -126,9 +125,6 @@
   margin-top: 20px;
   }
 }
-
-
-
 
 .container {
   padding: 50px calc(100vw/6);

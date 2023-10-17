@@ -1,8 +1,7 @@
 <div class="slideshow-container">
   <div class="slide-container">
     <app-kev></app-kev>
-    <div class="slide-volume">
-    </div>
+    <div class="slide-volume"></div>
   </div>
 
   <div class="slide-container" id="second-slide">
@@ -11,7 +10,7 @@
         <div class="title">Hello</div>
         <div class="subtitle">
           My name is Kevin and I love to <br />
-          <p [style.color]="changableColor">{{ changableText }}</p>
+          <p [style.color]="changableColor">{{ typedText }}{{ pipe }}</p>
           digital space.
         </div>
         <br />
