@@ -16,6 +16,7 @@ import { ProjectTileComponent } from './pages/portfolio/project-tile/project-til
 import { ProjectContainerComponent } from './pages/portfolio/project-container/project-container.component';
 import { ProjectFilterComponent } from './pages/portfolio/project-filter/project-filter.component';
 import { FooterComponent } from './footer/footer.component';
+import { PolicyComponent } from './pages/policy/policy.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectContainerComponent,
     ProjectFilterComponent,
     FooterComponent,
+    PolicyComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
       {path: "home", component: HomeComponent},
       {path: "about", component: AboutComponent},
       {path: "portfolio", component: PortfolioComponent},
+      {path: "policy", component: PolicyComponent},
       {path: "**", redirectTo: "home", pathMatch: "full"}
     ]),
     NgbModule,
