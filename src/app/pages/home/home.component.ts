@@ -16,23 +16,29 @@ export class HomeComponent implements OnInit {
   typedText = "";
   pipe = "|";
   currentWord = "";
+
+  scrollKevSlower() {
+    const kev = document.querySelector('.kev') as HTMLElement;
+    const slide = document.querySelector('.slide-container') as HTMLElement;
   
-  scrollToBottom() {
-    const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
-  
-    if (slideshowContainer) {
-      const lastSlideContainer = slideshowContainer.querySelector('.slide-container:last-child') as HTMLElement;
-  
-      if (lastSlideContainer) {
-        lastSlideContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
+    if (kev && slide) {
+
+    const slideRect = slide.getBoundingClientRect();
+
+    kev.style.top = `${- slideRect.top / 5}px`;
+
     }
   }
   
-ngOnInit() {
-  this.typeWord()
-  this.timertjeTikje();
-}
+  ngOnInit() {
+    this.typeWord();
+    this.timertjeTikje();
+  
+    // Call scrollKev every 100 milliseconds (adjust the interval as needed)
+    setInterval(() => {
+      this.scrollKevSlower();
+    }, 10);
+  }
 
 
   typeWord(){

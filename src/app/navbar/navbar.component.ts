@@ -1,5 +1,6 @@
 import { Component, Renderer2, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,10 +12,14 @@ export class NavbarComponent {
   activeLink: string = "";
   private toggleDropdownEnabled = true;
 
-  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef ) {
+  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef,private scrollService: ScrollService ) {
     this.router.events.subscribe(() => {
       this.activeLink = this.router.url;
     });
+  }
+
+  scrollToBottom() {
+    this.scrollService.scrollToBottom();
   }
 
   ngOnInit() {
@@ -35,19 +40,6 @@ export class NavbarComponent {
         this.clearDropdown();
       }
     });
-  }
-  
-  
-  scrollToBottom() {
-    const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
-  
-    if (slideshowContainer) {
-      const lastSlideContainer = slideshowContainer.querySelector('.slide-container:last-child') as HTMLElement;
-  
-      if (lastSlideContainer) {
-        lastSlideContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
-    }
   }
 
   isDropdownActive = false;

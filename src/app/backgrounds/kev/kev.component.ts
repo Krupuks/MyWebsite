@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-kev',
@@ -22,4 +22,5 @@ export class KevComponent implements AfterViewInit {
 
     setTimeout(fadeInText, 500);
   }
+
 }
