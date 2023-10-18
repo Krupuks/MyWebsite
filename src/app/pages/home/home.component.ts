@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -6,38 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(private scrollService: ScrollService ) {}
 
   changableColor: string = ''; // Initialize changableColor as an empty string
 
   wordList: string[] = ['create', 'craft', 'design', 'develop', 'explore'];
-  colorList: string[] = [ '#33FF57', '#5733FF', '#FFD633', '#FF338A', '#333FFA']; // List of colors
+  colorList: string[] = [ '#33FF57', '#5733FF', '#FFD633', '#FF338A', '#333FFA'];
   wordIndex: number = 0;
   charIndex = 0;
   typedText = "";
   pipe = "|";
   currentWord = "";
 
-  scrollKevSlower() {
-    const kev = document.querySelector('.kev') as HTMLElement;
-    const slide = document.querySelector('.slide-container') as HTMLElement;
-  
-    if (kev && slide) {
-
-    const slideRect = slide.getBoundingClientRect();
-
-    kev.style.top = `${- slideRect.top / 5}px`;
-
-    }
-  }
-  
   ngOnInit() {
     this.typeWord();
     this.timertjeTikje();
   
-    // Call scrollKev every 100 milliseconds (adjust the interval as needed)
     setInterval(() => {
-      this.scrollKevSlower();
-    }, 10);
+      this.scrollService.scrollElementSlower('.kev', 1.5);
+    }, 8);
   }
 
 

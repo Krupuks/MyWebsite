@@ -4,6 +4,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ScrollService {
+
+  scrollElementSlower(element : string, value : number) {
+    const kev = document.querySelector(element) as HTMLElement;
+    const slide = document.querySelector('.slide-container') as HTMLElement;
+  
+    console.log(kev)
+    if (kev && slide) {
+    const slideRect = slide.getBoundingClientRect();
+    kev.style.top = `calc(var(--posY) - var(--scale) * var(--theBoysY)/2 - ${slideRect.top / value}px)`;
+    }
+  }
+
   scrollToBottom() {
     const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
   
