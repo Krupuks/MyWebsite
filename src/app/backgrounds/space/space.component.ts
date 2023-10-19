@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from 'src/app/services/scroll.service'
 
 @Component({
   selector: 'app-space',
@@ -9,8 +10,9 @@ export class SpaceComponent {
   useScheme = false;
   jsColor = 'rgb(0, 46, 51)';
 
-  ngOnInit() {
-    // Add your JavaScript code here to handle user property changes
-  }
+  constructor(private scrollService: ScrollService ) {}
 
+  ngOnInit(){
+    //this.scrollService.moveWithMouse();
+  }
 }

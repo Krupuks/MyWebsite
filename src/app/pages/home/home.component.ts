@@ -9,13 +9,13 @@ import { ScrollService } from 'src/app/services/scroll.service';
 export class HomeComponent implements OnInit {
   constructor(private scrollService: ScrollService ) {}
 
-  changableColor: string = ''; // Initialize changableColor as an empty string
-
+  
   wordList: string[] = ['create', 'craft', 'design', 'develop', 'explore'];
   colorList: string[] = [ '#33FF57', '#5733FF', '#FFD633', '#FF338A', '#333FFA'];
   wordIndex: number = 0;
   charIndex = 0;
   typedText = "";
+  changableColor: string = "";
   pipe = "|";
   currentWord = "";
 
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   
     setInterval(() => {
       this.scrollService.scrollElementSlower('.kev', 1.5);
-    }, 8);
+    }, 1);
   }
 
 
